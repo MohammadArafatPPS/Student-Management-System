@@ -1,0 +1,50 @@
+<div class="container">
+  <h2>Edit Student</h2>
+  <form (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="student.firstName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="student.lastName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" name="country" [(ngModel)]="student.country" class="form-control" required>
+        <option value="Palestine">Palestine</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Jordan">Egypt</option>
+        <option value="Spain">Spain</option>
+        <option value="Australia">Australia</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Canada">Canada</option>
+        <option value="United States">United States</option>
+        <option value="Brazil">Brazil</option>
+        <option value="South Korea">South Korea</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="student.email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" [(ngModel)]="student.mobileNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="form-check">
+        <input type="radio" id="male" name="gender" [(ngModel)]="student.gender" value="Male" class="form-check-input" required>
+        <label for="male" class="form-check-label">Male</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="female" name="gender" [(ngModel)]="student.gender" value="Female" class="form-check-input" required>
+        <label for="female" class="form-check-label">Female</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Student</button>
+  </form>
+</div>

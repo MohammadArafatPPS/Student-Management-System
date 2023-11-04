@@ -1,0 +1,33 @@
+body 
+{
+  font-family: "Times New Roman", Times, serif;
+}
+/* Navigation menu Starts */
+nav 
+{
+  background-color: #0175c2;
+}
+nav ul 
+{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li 
+{
+  margin: 0 20px;
+}
+nav a 
+{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s; 
+  font-size: 22px;
+}
+nav a:hover 
+{
+  color: #000000; 
+}
+/* Navigation menu Ends */
